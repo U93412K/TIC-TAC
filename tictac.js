@@ -1,6 +1,7 @@
 let select=document.querySelectorAll(".btn");
 let playero=true;
 let newbtn=document.querySelector(".resetbtn")
+let message=document.querySelector(".message")
 
 select.forEach((box)=>{
     box.addEventListener("click",()=>{
@@ -48,12 +49,14 @@ for(let pattern of winarr){
         }
         if(pos1==="0" && pos2==="0" && pos3==="0"){
             console.log("player0 is winner")
+             message.innerHTML="player 0 is winner"
 
 
         }
         if(pos1==="X" && pos2==="X" && pos3==="X"){
                              
             console.log("playerX is winner")
+             message.innerHTML="player x is winner"
 
 
         }
